@@ -27,7 +27,7 @@ const ProductGrid: React.FC = () => {
       originalPrice: 799,
       rating: 4.8,
       reviews: 2847,
-      image: "/api/placeholder/300/300",
+      image: "https://m.media-amazon.com/images/I/61EUUoaKNPL._UF894,1000_QL80_.jpg",
       category: "furniture",
       futureImpact: "positive",
       description: "Professional-grade chair with lumbar support"
@@ -38,7 +38,7 @@ const ProductGrid: React.FC = () => {
       price: 89,
       rating: 3.2,
       reviews: 156,
-      image: "/api/placeholder/300/300",
+      image: "https://cdn.shopify.com/s/files/1/0044/1208/0217/files/LSORENCSHMBCHRBLK_900x.jpg?v=1734688979",
       category: "furniture",
       futureImpact: "negative",
       description: "Basic office seating solution"
@@ -49,7 +49,7 @@ const ProductGrid: React.FC = () => {
       price: 180,
       rating: 4.9,
       reviews: 5234,
-      image: "/api/placeholder/300/300",
+      image: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1741716872-puma-foreverrun-nitro-2-67d07d7915584.jpg?crop=1.00xw:0.668xh;0,0.149xh&resize=980:*",
       category: "sports",
       futureImpact: "positive",
       description: "Professional athletic footwear with advanced cushioning"
@@ -60,7 +60,7 @@ const ProductGrid: React.FC = () => {
       price: 35,
       rating: 2.8,
       reviews: 89,
-      image: "/api/placeholder/300/300",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0uqu6lyoTWIRrU_8IKxsbSt1jCKXsLwRUGQ&s",
       category: "sports",
       futureImpact: "negative",
       description: "Basic athletic shoes for casual use"
@@ -71,7 +71,7 @@ const ProductGrid: React.FC = () => {
       price: 1299,
       rating: 4.7,
       reviews: 3456,
-      image: "/api/placeholder/300/300",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.itclearance.com.au%2Fproduct%2Fhp-14s-fq0601au-amd-athlon-silver-3050u-laptop-35-6-cm-14-hd-16-gb-ddr4-sdram-512-gb-ssd-wi-fi-5-802-11ac-windows-11-home-silver%2F&psig=AOvVaw3-qnarC6QfRK9izMlyuCrL&ust=1752594995209000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCICfqaPbvI4DFQAAAAAdAAAAABAj",
       category: "electronics",
       futureImpact: "positive",
       description: "High-performance laptop for professionals"
@@ -82,7 +82,7 @@ const ProductGrid: React.FC = () => {
       price: 299,
       rating: 3.5,
       reviews: 234,
-      image: "/api/placeholder/300/300",
+      image: "https://www.livemint.com/lm-img/img/2024/04/05/600x338/laptoopp_1712313862514_1712313872393.PNG",
       category: "electronics",
       futureImpact: "neutral",
       description: "Basic laptop for everyday tasks"
