@@ -4,76 +4,88 @@
 @tailwind components;
 @tailwind utilities;
 
-/* QuantumShop Design System - Premium Dark Theme */
+/* QuantumShop Design System - Apple-Inspired Premium Light Theme */
 
 @layer base {
   :root {
-    /* Premium Dark Theme - Space Black Foundation */
-    --background: 222 15% 6%;
-    --foreground: 210 20% 92%;
+    /* Apple-inspired Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 6%;
 
-    /* Sophisticated Card System */
-    --card: 222 18% 8%;
-    --card-foreground: 210 20% 92%;
-    --card-elevated: 222 20% 10%;
+    /* Clean Card System */
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 6%;
+    --card-elevated: 0 0% 96%;
 
-    /* Quantum Accent - Sophisticated Teal */
-    --quantum-primary: 174 45% 55%;
-    --quantum-primary-foreground: 222 15% 6%;
-    --quantum-secondary: 174 25% 35%;
-    --quantum-glow: 174 55% 65%;
+    /* Apple Blue System */
+    --apple-blue: 211 100% 50%;
+    --apple-blue-dark: 211 100% 45%;
+    --apple-blue-light: 211 100% 95%;
+    --apple-gray: 220 14% 96%;
+    --apple-gray-2: 220 13% 91%;
+    --apple-gray-3: 220 9% 46%;
+    --apple-gray-4: 224 71% 4%;
 
-    /* Premium Grays */
-    --gray-50: 210 20% 92%;
-    --gray-100: 210 15% 85%;
-    --gray-200: 210 12% 75%;
-    --gray-300: 210 10% 65%;
-    --gray-400: 210 8% 55%;
-    --gray-500: 210 6% 45%;
-    --gray-600: 210 8% 35%;
-    --gray-700: 210 12% 25%;
-    --gray-800: 210 15% 15%;
-    --gray-900: 222 18% 8%;
+    /* Shopping accent colors */
+    --shop-primary: 211 100% 50%;
+    --shop-primary-foreground: 0 0% 100%;
+    --shop-secondary: 47 100% 50%;
+    --shop-success: 142 76% 36%;
+    --shop-warning: 38 92% 50%;
+    --shop-error: 0 84% 60%;
+
+    /* Premium Grays - Apple style */
+    --gray-50: 0 0% 97%;
+    --gray-100: 220 14% 96%;
+    --gray-200: 220 13% 91%;
+    --gray-300: 216 12% 84%;
+    --gray-400: 218 11% 65%;
+    --gray-500: 220 9% 46%;
+    --gray-600: 215 14% 34%;
+    --gray-700: 217 19% 27%;
+    --gray-800: 215 28% 17%;
+    --gray-900: 224 71% 4%;
 
     /* Emotional States */
-    --emotion-happy: 45 85% 65%;
-    --emotion-neutral: 210 8% 55%;
-    --emotion-regret: 0 65% 55%;
+    --emotion-happy: 142 76% 36%;
+    --emotion-neutral: 220 9% 46%;
+    --emotion-regret: 0 84% 60%;
 
-    /* Glassmorphism Effects */
-    --glass-bg: 222 20% 10% / 0.8;
-    --glass-border: 210 20% 92% / 0.1;
-    --glass-glow: 174 45% 55% / 0.15;
+    /* Apple Glass Effects */
+    --glass-bg: 0 0% 100% / 0.8;
+    --glass-border: 220 13% 91% / 0.5;
+    --glass-glow: 211 100% 50% / 0.1;
 
-    /* Shadows & Glows */
-    --shadow-quantum: 0 20px 40px -12px hsl(174 45% 55% / 0.25);
-    --shadow-elevation: 0 8px 32px -8px hsl(222 15% 6% / 0.4);
-    --shadow-soft: 0 4px 16px -4px hsl(222 15% 6% / 0.2);
+    /* Apple Shadows */
+    --shadow-apple: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px 0 hsl(0 0% 0% / 0.06);
+    --shadow-apple-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -2px hsl(0 0% 0% / 0.05);
+    --shadow-apple-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.1), 0 10px 10px -5px hsl(0 0% 0% / 0.04);
 
-    /* Gradients */
-    --gradient-quantum: linear-gradient(135deg, hsl(174 45% 55%), hsl(174 35% 45%));
-    --gradient-depth: linear-gradient(180deg, hsl(222 18% 8%), hsl(222 15% 6%));
-    --gradient-glow: radial-gradient(ellipse at center, hsl(174 45% 55% / 0.1), transparent 70%);
+    /* Apple Gradients */
+    --gradient-apple-blue: linear-gradient(135deg, hsl(211 100% 50%), hsl(211 100% 45%));
+    --gradient-apple-bg: linear-gradient(180deg, hsl(0 0% 100%), hsl(220 14% 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(211 100% 50% / 0.1), hsl(47 100% 50% / 0.1));
 
     /* Legacy mappings for shadcn compatibility */
-    --primary: 174 45% 55%;
-    --primary-foreground: 222 15% 6%;
-    --secondary: 222 18% 8%;
-    --secondary-foreground: 210 20% 92%;
-    --muted: 222 20% 10%;
-    --muted-foreground: 210 8% 55%;
-    --accent: 174 25% 35%;
-    --accent-foreground: 210 20% 92%;
-    --destructive: 0 65% 55%;
-    --destructive-foreground: 210 20% 92%;
-    --border: 210 20% 92% / 0.1;
-    --input: 222 20% 10%;
-    --ring: 174 45% 55%;
-    --radius: 0.75rem;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 224 71% 4%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 0 0% 100%;
+    --ring: 211 100% 50%;
+    --radius: 0.5rem;
 
-    /* Animations */
-    --transition-quantum: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-smooth: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Apple Animations */
+    --transition-apple: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.15s ease-out;
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   * {
@@ -82,102 +94,163 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: hsl(var(--background));
-    background-image: var(--gradient-depth);
+    background-image: var(--gradient-apple-bg);
   }
 
-  /* Quantum UI Components */
-  .quantum-card {
-    @apply bg-card border border-border/20 rounded-2xl backdrop-blur-sm;
+  /* Apple UI Components */
+  .apple-card {
+    @apply bg-card border border-border rounded-xl;
     background: hsl(var(--card));
-    box-shadow: var(--shadow-soft), inset 0 1px 0 hsl(var(--glass-border));
+    box-shadow: var(--shadow-apple);
+    transition: var(--transition-apple);
   }
 
-  .quantum-glass {
+  .apple-card:hover {
+    box-shadow: var(--shadow-apple-lg);
+    transform: translateY(-1px);
+  }
+
+  .apple-glass {
     background: hsl(var(--glass-bg));
     border: 1px solid hsl(var(--glass-border));
-    backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-elevation);
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: var(--shadow-apple-lg);
   }
 
-  .quantum-glow {
-    box-shadow: var(--shadow-quantum);
+  .apple-button {
+    @apply relative overflow-hidden rounded-lg px-6 py-3 font-medium transition-all duration-200;
+    background: var(--gradient-apple-blue);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-apple);
   }
 
-  .quantum-button {
-    @apply relative overflow-hidden rounded-xl px-8 py-3 font-medium transition-all duration-300;
-    background: var(--gradient-quantum);
-    color: hsl(var(--quantum-primary-foreground));
-    box-shadow: var(--shadow-quantum);
+  .apple-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-apple-lg);
   }
 
-  .quantum-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 25px 50px -12px hsl(174 45% 55% / 0.35);
-  }
-
-  .quantum-button:active {
+  .apple-button:active {
     transform: translateY(0);
   }
 
-  /* Typography Hierarchy */
-  .quantum-title {
-    @apply text-4xl font-bold tracking-tight;
-    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--quantum-glow)));
+  .shop-button {
+    @apply relative overflow-hidden rounded-full px-8 py-4 font-semibold transition-all duration-200;
+    background: hsl(var(--shop-primary));
+    color: hsl(var(--shop-primary-foreground));
+    box-shadow: var(--shadow-apple);
+  }
+
+  .shop-button:hover {
+    background: hsl(var(--apple-blue-dark));
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-apple-xl);
+  }
+
+  /* Apple Typography Hierarchy */
+  .apple-title {
+    @apply text-5xl font-bold tracking-tight;
+    background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--apple-blue)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  .quantum-subtitle {
-    @apply text-xl font-medium text-muted-foreground;
+  .apple-subtitle {
+    @apply text-xl font-medium text-gray-600;
   }
 
-  .quantum-label {
-    @apply text-sm font-medium text-foreground/80;
+  .apple-label {
+    @apply text-sm font-medium text-gray-700;
   }
 
-  /* Scroll Styles */
-  .quantum-scroll::-webkit-scrollbar {
-    width: 6px;
+  .hero-title {
+    @apply text-6xl font-bold tracking-tight;
+    color: hsl(var(--foreground));
   }
 
-  .quantum-scroll::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
+  .product-title {
+    @apply text-2xl font-semibold text-gray-900;
   }
 
-  .quantum-scroll::-webkit-scrollbar-thumb {
-    background: hsl(var(--quantum-primary));
-    border-radius: 3px;
+  .product-price {
+    @apply text-xl font-bold text-gray-900;
   }
 
-  /* Animations */
-  @keyframes quantum-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
+  /* Apple Scroll Styles */
+  .apple-scroll::-webkit-scrollbar {
+    width: 8px;
   }
 
-  @keyframes quantum-float {
+  .apple-scroll::-webkit-scrollbar-track {
+    background: hsl(var(--apple-gray));
+  }
+
+  .apple-scroll::-webkit-scrollbar-thumb {
+    background: hsl(var(--apple-gray-3));
+    border-radius: 4px;
+  }
+
+  /* Apple Animations */
+  @keyframes apple-fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes apple-scale-in {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes apple-float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
   }
 
-  @keyframes quantum-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(174 45% 55% / 0.2); }
-    50% { box-shadow: 0 0 40px hsl(174 45% 55% / 0.4); }
+  @keyframes apple-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
   }
 
-  .animate-quantum-pulse {
-    animation: quantum-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  @keyframes apple-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(211 100% 50% / 0.1); }
+    50% { box-shadow: 0 0 40px hsl(211 100% 50% / 0.2); }
   }
 
-  .animate-quantum-float {
-    animation: quantum-float 3s ease-in-out infinite;
+  .animate-apple-fade-in {
+    animation: apple-fade-in 0.6s ease-out;
   }
 
-  .animate-quantum-glow {
-    animation: quantum-glow 2s ease-in-out infinite;
+  .animate-apple-scale-in {
+    animation: apple-scale-in 0.4s ease-out;
+  }
+
+  .animate-apple-float {
+    animation: apple-float 4s ease-in-out infinite;
+  }
+
+  .animate-apple-pulse {
+    animation: apple-pulse 2s ease-in-out infinite;
+  }
+
+  .animate-apple-glow {
+    animation: apple-glow 3s ease-in-out infinite;
+  }
+
+  /* Product Card Animations */
+  .product-card {
+    @apply apple-card p-6 transition-all duration-300;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-apple-xl);
+  }
+
+  /* Shopping Cart Animation */
+  .cart-bounce {
+    animation: var(--transition-bounce);
   }
 }
 
